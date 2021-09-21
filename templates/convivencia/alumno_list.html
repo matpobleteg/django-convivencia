@@ -1,0 +1,10 @@
+<!-- templates/home.html -->
+{% extends '_base.html' %}
+{% block title %}Alumnos{% endblock title %}
+{% block content %}
+    {% for alumno in alumno_list %}
+        <div>
+            <h2><a href="{{ alumno.get_absolute_url }}">{{ alumno.nombre_alumno }}</a></h2>
+        </div>
+    {% endfor %}
+{% endblock content %}

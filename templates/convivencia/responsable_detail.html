@@ -1,0 +1,11 @@
+<!-- templates/home.html -->
+{% extends '_base.html' %}
+{% block title %}{{ object.title }}{% endblock title %}
+{% block content %}
+    <div class="book-detail">
+        <h2><a href="">{{ object.nombre }}</a></h2>
+        <p>Ocupacion: {{ object.ocupacion }}</p>
+        <p>Relacion/Parentesco: {{ object.relacion_parentesco }}</p>
+        <p>Niño: <a href="{{ object.alumno.get_absolute_url }}">{{ object.alumno.pk }}</a></p>
+    </div>
+{% endblock content %}

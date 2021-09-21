@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+{% extends '_base.html' %}
+{% block title %}{{ alumno }}{% endblock title %}
+{% block content %}
+    <div class="book-detail">
+        <h2><a href="">{{ alumno.nombre_alumno }}</a></h2>
+        <p>Apellido: {{ alumno.apellido_alumno }}</p>
+        <p>Apoderado: <a href="{{ alumno.apoderado_alumno.get_absolute_url }}">{{ alumno.apoderado_alumno }}</a> </p>
+
+
+    </div>
+{% endblock content %}

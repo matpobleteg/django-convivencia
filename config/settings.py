@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     # LOCAL
     'accounts',
     'pages',
+    # APP
+    'convivencia',
 ]
 # django-crispy-forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
